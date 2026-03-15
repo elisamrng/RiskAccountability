@@ -81,30 +81,30 @@ Output/
 ```
 
 
-### activity_ranking.txt
+**activity_ranking.txt**
 
 Ranking of activities with the highest severity score.
 
-### activity_severity.txt
+**activity_severity.txt**
 
 Lists the severity values associated with each activity.
 
-### variants_ranking.txt
+**variants_ranking.txt**
 
 Ranking of the most risky variants.
 
 
-### variant_repeats.txt
+**variant_repeats.txt**
 
 Reports the number of repetitions of each repeated activity within each
 variant.
 
-### variants_alignments.txt
+**variants_alignments.txt**
 
 Displays the alignment between log traces and the process model together
 with the associated severity values.
 
-### variants_alignments_skipped.txt
+**variants_alignments_skipped.txt**
 
 Contains only the variants that were excluded from the main analysis
 using `list_avoid`.
