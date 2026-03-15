@@ -8,7 +8,7 @@ Department of Computer Science
 University of Turin
 
 Under the supervision of 
-**Matteo Baldoni, Cristina Baroglio, Elisa Marengo, and Roberto Micalizio**
+**Roberto Micalizio and Elisa Marengo**
 
 ------------------------------------------------------------------------
 
