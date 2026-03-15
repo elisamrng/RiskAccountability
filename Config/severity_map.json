@@ -1,0 +1,46 @@
+{
+  "Add_penalty": {
+    "sigma_M": 0.25,
+    "sigma_L": 0.15
+  },
+  "Appeal_to_Judge": {
+    "sigma_M": 0.2,
+    "sigma_L": 0.12
+  },
+  "Create_Fine": {
+    "sigma_M": 0.1,
+    "sigma_L": 0.06
+  },
+  "Insert_Date_Appeal_to_Prefecture": {
+    "sigma_M": 0.35,
+    "sigma_L": 0.2
+  },
+  "Insert_Fine_Notification": {
+    "sigma_M": 0.25,
+    "sigma_L": 0.17
+  },
+  "Notify_Result_Appeal_to_Offender": {
+    "sigma_M": 0.2,
+    "sigma_L": 0.4
+  },
+  "Payment": {
+    "sigma_M": 0.6,
+    "sigma_L": 0.05
+  },
+  "Receive_Result_Appeal_from_Prefecture": {
+    "sigma_M": 0.3,
+    "sigma_L": 0.21
+  },
+  "Send_Appeal_to_Prefecture": {
+    "sigma_M": 0.3,
+    "sigma_L": 0.21
+  },
+  "Send_Fine": {
+    "sigma_M": 0.3,
+    "sigma_L": 0.18
+  },
+  "Send_for_Credit_Collection": {
+    "sigma_M": 0.7,
+    "sigma_L": 0.42
+  }
+}

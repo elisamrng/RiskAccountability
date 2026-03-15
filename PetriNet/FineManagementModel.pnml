@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+	<!-- Written by GreatSPN Editor. -->
+	<net id="PT" type="http://www.pnml.org/version-2009/grammar/ptnet">
+		<name>
+			<text>PT</text>
+		</name>
+		<page id="page0">
+			<name>
+				<text>DefaultPage</text>
+			</name>
+			<!-- List of places -->
+			<place id="start">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>start</text>
+				</name>
+				<graphics>
+					<position x="90" y="170"/>
+				</graphics>
+				<initialMarking>
+					<text>1</text>
+				</initialMarking>
+			</place>
+			<place id="P0">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P0</text>
+				</name>
+				<graphics>
+					<position x="170" y="170"/>
+				</graphics>
+			</place>
+			<place id="P1">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P1</text>
+				</name>
+				<graphics>
+					<position x="260" y="130"/>
+				</graphics>
+			</place>
+			<place id="P3">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P3</text>
+				</name>
+				<graphics>
+					<position x="370" y="130"/>
+				</graphics>
+			</place>
+			<place id="P4">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P4</text>
+				</name>
+				<graphics>
+					<position x="530" y="200"/>
+				</graphics>
+			</place>
+			<place id="P5">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P5</text>
+				</name>
+				<graphics>
+					<position x="470" y="100"/>
+				</graphics>
+			</place>
+			<place id="P6">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P6</text>
+				</name>
+				<graphics>
+					<position x="560" y="100"/>
+				</graphics>
+			</place>
+			<place id="P7">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P7</text>
+				</name>
+				<graphics>
+					<position x="650" y="100"/>
+				</graphics>
+			</place>
+			<place id="P8">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>P8</text>
+				</name>
+				<graphics>
+					<position x="730" y="100"/>
+				</graphics>
+			</place>
+			<place id="end">
+				<name>
+					<graphics>
+						<offset x="0" y="15"/>
+					</graphics>
+					<text>end</text>
+				</name>
+				<graphics>
+					<position x="860" y="160"/>
+				</graphics>
+			</place>
+			<!-- List of transitions -->
+			<transition id="Create_Fine">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Create_Fine</text>
+				</name>
+				<graphics>
+					<position x="135" y="170"/>
+				</graphics>
+			</transition>
+			<transition id="Send_Fine">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Send_Fine</text>
+				</name>
+				<graphics>
+					<position x="215" y="130"/>
+				</graphics>
+			</transition>
+			<transition id="Payment">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Payment</text>
+				</name>
+				<graphics>
+					<position x="585" y="200"/>
+				</graphics>
+			</transition>
+			<transition id="Insert_Fine_Notification">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Insert_Fine_Notification</text>
+				</name>
+				<graphics>
+					<position x="315" y="130"/>
+				</graphics>
+			</transition>
+			<transition id="skip_1">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>skip_1</text>
+				</name>
+				<graphics>
+					<position x="305" y="240"/>
+				</graphics>
+			</transition>
+			<transition id="skip_2">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>skip_2</text>
+				</name>
+				<graphics>
+					<position x="495" y="200"/>
+				</graphics>
+			</transition>
+			<transition id="Send_for_Credit_Collection">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Send_for_Credit_Collection</text>
+				</name>
+				<graphics>
+					<position x="795" y="70"/>
+				</graphics>
+			</transition>
+			<transition id="Insert_Date_Appeal_to_Prefecture">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Insert_Date_Appeal_to_Prefecture</text>
+				</name>
+				<graphics>
+					<position x="435" y="70"/>
+				</graphics>
+			</transition>
+			<transition id="Send_Appeal_to_Prefecture">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Send_Appeal_to_Prefecture</text>
+				</name>
+				<graphics>
+					<position x="515" y="60"/>
+				</graphics>
+			</transition>
+			<transition id="Receive_Result_Appeal_from_Prefecture">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Receive_Result_Appeal_from_Prefecture</text>
+				</name>
+				<graphics>
+					<position x="615" y="70"/>
+				</graphics>
+			</transition>
+			<transition id="Notify_Result_Appeal_to_Offender">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Notify_Result_Appeal_to_Offender</text>
+				</name>
+				<graphics>
+					<position x="705" y="60"/>
+				</graphics>
+			</transition>
+			<transition id="skip_3">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>skip_3</text>
+				</name>
+				<graphics>
+					<position x="795" y="130"/>
+				</graphics>
+			</transition>
+			<transition id="Add_penalty">
+				<name>
+					<graphics>
+						<offset x="0" y="-15"/>
+					</graphics>
+					<text>Add_penalty</text>
+				</name>
+				<graphics>
+					<position x="495" y="150"/>
+				</graphics>
+			</transition>
+			<!-- List of arcs -->
+			<arc id="id1" source="start" target="Create_Fine">
+			</arc>
+			<arc id="id2" source="Create_Fine" target="P0">
+			</arc>
+			<arc id="id3" source="P0" target="Send_Fine">
+			</arc>
+			<arc id="id4" source="Send_Fine" target="P1">
+			</arc>
+			<arc id="id5" source="P1" target="Insert_Fine_Notification">
+			</arc>
+			<arc id="id6" source="Insert_Fine_Notification" target="P3">
+			</arc>
+			<arc id="id7" source="P4" target="Payment">
+			</arc>
+			<arc id="id8" source="P3" target="skip_2">
+			</arc>
+			<arc id="id9" source="skip_2" target="P4">
+			</arc>
+			<arc id="id10" source="P0" target="skip_1">
+			</arc>
+			<arc id="id11" source="skip_1" target="P4">
+				<graphics>
+					<position x="505" y="255"/>
+				</graphics>
+			</arc>
+			<arc id="id12" source="P3" target="Insert_Date_Appeal_to_Prefecture">
+			</arc>
+			<arc id="id13" source="Insert_Date_Appeal_to_Prefecture" target="P5">
+			</arc>
+			<arc id="id14" source="P5" target="Send_Appeal_to_Prefecture">
+			</arc>
+			<arc id="id15" source="Send_Appeal_to_Prefecture" target="P6">
+			</arc>
+			<arc id="id16" source="P6" target="Receive_Result_Appeal_from_Prefecture">
+			</arc>
+			<arc id="id17" source="Receive_Result_Appeal_from_Prefecture" target="P7">
+			</arc>
+			<arc id="id18" source="P7" target="Notify_Result_Appeal_to_Offender">
+			</arc>
+			<arc id="id19" source="Notify_Result_Appeal_to_Offender" target="P8">
+			</arc>
+			<arc id="id20" source="P8" target="Send_for_Credit_Collection">
+			</arc>
+			<arc id="id21" source="P8" target="skip_3">
+			</arc>
+			<arc id="id22" source="Send_for_Credit_Collection" target="end">
+			</arc>
+			<arc id="id23" source="skip_3" target="end">
+			</arc>
+			<arc id="id24" source="Payment" target="end">
+			</arc>
+			<arc id="id25" source="P3" target="Add_penalty">
+			</arc>
+			<arc id="id26" source="Add_penalty" target="P4">
+			</arc>
+		</page>
+	</net>
+</pnml>

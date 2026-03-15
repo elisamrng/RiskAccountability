@@ -1,0 +1,52 @@
+### Ranking delle prime 10 varianti per rischio stimato ###
+
+1) Variante 2 
+Tracce: 56482
+Rischio: 0.288476 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Send_for_Credit_Collection
+
+2) Variante 1 
+Tracce: 20385
+Rischio: 0.094896 
+Sequenza: Create_Fine -> Send_Fine
+
+3) Variante 4 
+Tracce: 2497
+Rischio: 0.012408 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture
+
+4) Variante 11 
+Tracce: 3131
+Rischio: 0.005205 
+Sequenza: Create_Fine -> Send_Fine -> Payment
+
+5) Variante 9 
+Tracce: 1515
+Rischio: 0.004232 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Send_for_Credit_Collection
+
+6) Variante 7 
+Tracce: 443
+Rischio: 0.002201 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+
+7) Variante 36 
+Tracce: 522
+Rischio: 0.001760 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Send_for_Credit_Collection
+
+8) Variante 6 
+Tracce: 3736
+Rischio: 0.001242 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment
+
+9) Variante 13 
+Tracce: 3301
+Rischio: 0.001098 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+
+10) Variante 25 
+Tracce: 108
+Rischio: 0.000572 
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Send_for_Credit_Collection
+

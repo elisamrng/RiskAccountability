@@ -1,0 +1,479 @@
+# Ripetizioni varianti
+# Numero varianti analizzate: 231
+
+## Variante 6
+Tracce: 3736
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 13
+Tracce: 3301
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 14
+Tracce: 58
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 16
+Tracce: 89
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 19
+Tracce: 69
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 21
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 33
+Tracce: 12
+Sequenza: Create_Fine -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 39
+Tracce: 34
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 40
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Payment -> Receive_Result_Appeal_from_Prefecture -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 64
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 10 volte
+  - Massime ripetizioni consecutive: Payment X 10 volte)
+
+## Variante 65
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 67
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 10 volte
+  - Massime ripetizioni consecutive: Payment X 10 volte)
+
+## Variante 71
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 5 volte
+  - Massime ripetizioni consecutive: Payment X 5 volte)
+
+## Variante 73
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 75
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 12 volte
+  - Massime ripetizioni consecutive: Payment X 12 volte)
+
+## Variante 76
+Tracce: 19
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 77
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 10 volte
+  - Massime ripetizioni consecutive: Payment X 10 volte)
+
+## Variante 78
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 4 volte
+  - Massime ripetizioni consecutive: Payment X 4 volte)
+
+## Variante 80
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 8 volte
+  - Massime ripetizioni consecutive: Payment X 8 volte)
+
+## Variante 81
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 11 volte
+  - Massime ripetizioni consecutive: Payment X 11 volte)
+
+## Variante 84
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 15 volte
+  - Massime ripetizioni consecutive: Payment X 15 volte)
+
+## Variante 85
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 87
+Tracce: 13
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 4 volte
+  - Massime ripetizioni consecutive: Payment X 4 volte)
+
+## Variante 88
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 6 volte
+  - Massime ripetizioni consecutive: Payment X 6 volte)
+
+## Variante 89
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 7 volte
+  - Massime ripetizioni consecutive: Payment X 7 volte)
+
+## Variante 90
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 7 volte
+  - Massime ripetizioni consecutive: Payment X 6 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 92
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 5 volte
+  - Massime ripetizioni consecutive: Payment X 4 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 93
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 4 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 99
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 100
+Tracce: 56
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Insert_Fine_Notification -> Add_penalty -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 102
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 103
+Tracce: 7
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Attività ripetute: Payment X 3 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 104
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Attività ripetute: Payment X 3 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 109
+Tracce: 14
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 111
+Tracce: 7
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 115
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 120
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 124
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 127
+Tracce: 20
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Payment -> Add_penalty -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 129
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 133
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 4 volte
+  - Massime ripetizioni consecutive: Payment X 4 volte)
+
+## Variante 135
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Payment -> Add_penalty -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 137
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 138
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Payment -> Notify_Result_Appeal_to_Offender -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 142
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 144
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 155
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 157
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 158
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 162
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 4 volte
+  - Massime ripetizioni consecutive: Payment X 4 volte)
+
+## Variante 164
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 168
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 169
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 171
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 172
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 5 volte
+  - Massime ripetizioni consecutive: Payment X 5 volte)
+
+## Variante 174
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 8 volte
+  - Massime ripetizioni consecutive: Payment X 7 volte)
+  - Ripetizioni non consecutive: Payment
+
+## Variante 176
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 180
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 181
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment -> Add_penalty -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 182
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Payment -> Send_Fine
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 184
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 186
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 189
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 199
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Appeal_to_Judge -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 205
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 207
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 6 volte
+  - Massime ripetizioni consecutive: Payment X 6 volte)
+
+## Variante 209
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 210
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 6 volte
+  - Massime ripetizioni consecutive: Payment X 6 volte)
+
+## Variante 215
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 10 volte
+  - Massime ripetizioni consecutive: Payment X 10 volte)
+
+## Variante 216
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Send_for_Credit_Collection
+Attività ripetute: Payment X 10 volte
+  - Massime ripetizioni consecutive: Payment X 10 volte)
+
+## Variante 218
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 219
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment
+Attività ripetute: Payment X 2 volte
+  - Massime ripetizioni consecutive: Payment X 2 volte)
+
+## Variante 221
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 6 volte
+  - Massime ripetizioni consecutive: Payment X 6 volte)
+
+## Variante 223
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 10 volte
+  - Massime ripetizioni consecutive: Payment X 10 volte)
+
+## Variante 224
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 5 volte
+  - Massime ripetizioni consecutive: Payment X 5 volte)
+
+## Variante 225
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Attività ripetute: Payment X 2 volte
+  - Ripetizioni non consecutive: Payment
+
+## Variante 227
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 3 volte
+  - Massime ripetizioni consecutive: Payment X 3 volte)
+
+## Variante 230
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Attività ripetute: Payment X 6 volte
+  - Massime ripetizioni consecutive: Payment X 6 volte)
+
+# Varianti con attività ripetute ≥ 2): 78

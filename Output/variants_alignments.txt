@@ -1,0 +1,4339 @@
+# Elenco allineamenti
+# Numero di varianti: 231
+# Tracce totali (N): 150370
+
+## Variante 1
+Tracce: 20385
+Sequenza: Create_Fine -> Send_Fine
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.700000
+probabilità λ: 20385/150370 = 0.135566
+Rischio stimato: 0.094896
+
+## Variante 2
+Tracce: 56482
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Send_for_Credit_Collection | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.768000
+probabilità λ: 56482/150370 = 0.375620
+Rischio stimato: 0.288476
+
+## Variante 3
+Tracce: 9520
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 0
+Severity aggregata σ: 0.000000
+probabilità λ: 9520/150370 = 0.063311
+Rischio stimato: 0.000000
+
+## Variante 4
+Tracce: 2497
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.747200
+probabilità λ: 2497/150370 = 0.016606
+Rischio stimato: 0.012408
+
+## Variante 5
+Tracce: 46371
+Sequenza: Create_Fine -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (>> | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 0
+Severity aggregata σ: 0.000000
+probabilità λ: 46371/150370 = 0.308379
+Rischio stimato: 0.000000
+
+## Variante 6
+Tracce: 3736
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.050000
+probabilità λ: 3736/150370 = 0.024845
+Rischio stimato: 0.001242
+
+## Variante 7
+Tracce: 443
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.747200
+probabilità λ: 443/150370 = 0.002946
+Rischio stimato: 0.002201
+
+## Variante 8
+Tracce: 9
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Payment -> Add_penalty -> Send_Appeal_to_Prefecture
+Case ID: A10125, A17617, A32925, N99936, S113882, S155457, S173575, S175911, V5629
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (>> | >>)
+  (Payment | Payment)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.462800
+probabilità λ: 9/150370 = 0.000060
+Rischio stimato: 0.000028
+
+## Variante 9
+Tracce: 1515
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.420000
+probabilità λ: 1515/150370 = 0.010075
+Rischio stimato: 0.004232
+
+## Variante 10
+Tracce: 61
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 61/150370 = 0.000406
+Rischio stimato: 0.000078
+
+## Variante 11
+Tracce: 3131
+Sequenza: Create_Fine -> Send_Fine -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.250000
+probabilità λ: 3131/150370 = 0.020822
+Rischio stimato: 0.005205
+
+## Variante 12
+Tracce: 139
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 139/150370 = 0.000924
+Rischio stimato: 0.000178
+
+## Variante 13
+Tracce: 3301
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.050000
+probabilità λ: 3301/150370 = 0.021953
+Rischio stimato: 0.001098
+
+## Variante 14
+Tracce: 58
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.287500
+probabilità λ: 58/150370 = 0.000386
+Rischio stimato: 0.000111
+
+## Variante 15
+Tracce: 45
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Send_for_Credit_Collection | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.779600
+probabilità λ: 45/150370 = 0.000299
+Rischio stimato: 0.000233
+
+## Variante 16
+Tracce: 89
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.050000
+probabilità λ: 89/150370 = 0.000592
+Rischio stimato: 0.000030
+
+## Variante 17
+Tracce: 42
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 42/150370 = 0.000279
+Rischio stimato: 0.000070
+
+## Variante 18
+Tracce: 362
+Sequenza: Create_Fine -> Payment -> Send_Fine
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (>> | >>)
+  (Payment | Payment)
+  (Send_Fine | >>)
+Costo algoritmo PM4Py: 10001
+Severity aggregata σ: 0.180000
+probabilità λ: 362/150370 = 0.002407
+Rischio stimato: 0.000433
+
+## Variante 19
+Tracce: 69
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.097500
+probabilità λ: 69/150370 = 0.000459
+Rischio stimato: 0.000045
+
+## Variante 20
+Tracce: 81
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 81/150370 = 0.000539
+Rischio stimato: 0.000081
+
+## Variante 21
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Case ID: A13984, A8980
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.463013
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000006
+
+## Variante 22
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Add_penalty -> Payment
+Case ID: A14194, S174235, S60717
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.200000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000004
+
+## Variante 23
+Tracce: 135
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.120000
+probabilità λ: 135/150370 = 0.000898
+Rischio stimato: 0.000108
+
+## Variante 24
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: A15064, C10981, C19061, N102850, S114589, S119181
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.526000
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000021
+
+## Variante 25
+Tracce: 108
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Send_for_Credit_Collection | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.795840
+probabilità λ: 108/150370 = 0.000718
+Rischio stimato: 0.000572
+
+## Variante 26
+Tracce: 114
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 114/150370 = 0.000758
+Rischio stimato: 0.000146
+
+## Variante 27
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Case ID: A1582, N61376
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.476400
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000006
+
+## Variante 28
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Add_penalty -> Payment
+Case ID: A15866, A17210, N21196, S153098, S188281, S191930
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Add_penalty | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000008
+
+## Variante 29
+Tracce: 88
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 88/150370 = 0.000585
+Rischio stimato: 0.000088
+
+## Variante 30
+Tracce: 12
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 12/150370 = 0.000080
+Rischio stimato: 0.000020
+
+## Variante 31
+Tracce: 126
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.580000
+probabilità λ: 126/150370 = 0.000838
+Rischio stimato: 0.000486
+
+## Variante 32
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture
+Case ID: A17158, S62891
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.777536
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000010
+
+## Variante 33
+Tracce: 12
+Sequenza: Create_Fine -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (>> | >>)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.050000
+probabilità λ: 12/150370 = 0.000080
+Rischio stimato: 0.000004
+
+## Variante 34
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: A189, C22308
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.810400
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000011
+
+## Variante 35
+Tracce: 15
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 15/150370 = 0.000100
+Rischio stimato: 0.000019
+
+## Variante 36
+Tracce: 522
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+  (Add_penalty | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 20001
+Severity aggregata σ: 0.507000
+probabilità λ: 522/150370 = 0.003471
+Rischio stimato: 0.001760
+
+## Variante 37
+Tracce: 49
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 49/150370 = 0.000326
+Rischio stimato: 0.000049
+
+## Variante 38
+Tracce: 12
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.434750
+probabilità λ: 12/150370 = 0.000080
+Rischio stimato: 0.000035
+
+## Variante 39
+Tracce: 34
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.287500
+probabilità λ: 34/150370 = 0.000226
+Rischio stimato: 0.000065
+
+## Variante 40
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Payment -> Receive_Result_Appeal_from_Prefecture -> Payment
+Case ID: A24141
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 41
+Tracce: 7
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection -> Send_Appeal_to_Prefecture
+Case ID: A24549, A26417, A26425, A27571, N102144, N91819, S116262
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 7/150370 = 0.000047
+Rischio stimato: 0.000025
+
+## Variante 42
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Receive_Result_Appeal_from_Prefecture -> Send_for_Credit_Collection
+Case ID: A2512
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_for_Credit_Collection | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.890032
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000006
+
+## Variante 43
+Tracce: 14
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Insert_Fine_Notification -> Add_penalty -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Payment | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Send_for_Credit_Collection | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.779600
+probabilità λ: 14/150370 = 0.000093
+Rischio stimato: 0.000073
+
+## Variante 44
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Add_penalty -> Send_for_Credit_Collection
+Case ID: A26532, A27067, N21892, S47893
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Add_penalty | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000004
+
+## Variante 45
+Tracce: 20
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 20/150370 = 0.000133
+Rischio stimato: 0.000038
+
+## Variante 46
+Tracce: 10
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Add_penalty -> Send_Appeal_to_Prefecture
+Case ID: A28658, A34027, A39656, S120737, S123702, S128931, S130468, S144491, S165080, S174777
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.747200
+probabilità λ: 10/150370 = 0.000067
+Rischio stimato: 0.000050
+
+## Variante 47
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_for_Credit_Collection
+Case ID: A29455
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 48
+Tracce: 9
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: A30270, N98221, S56940, S69557, S69974, V5714, V7629, V8004, V8241
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.200000
+probabilità λ: 9/150370 = 0.000060
+Rischio stimato: 0.000012
+
+## Variante 49
+Tracce: 32
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.648000
+probabilità λ: 32/150370 = 0.000213
+Rischio stimato: 0.000138
+
+## Variante 50
+Tracce: 20
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 20/150370 = 0.000133
+Rischio stimato: 0.000020
+
+## Variante 51
+Tracce: 20
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 20/150370 = 0.000133
+Rischio stimato: 0.000034
+
+## Variante 52
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: A32727
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.558000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 53
+Tracce: 8
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection -> Send_Appeal_to_Prefecture
+Case ID: A3350, N100684, S112474, S114128, S114813, S115930, S115992, V16460
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 8/150370 = 0.000053
+Rischio stimato: 0.000028
+
+## Variante 54
+Tracce: 16
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Send_for_Credit_Collection | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.795840
+probabilità λ: 16/150370 = 0.000106
+Rischio stimato: 0.000085
+
+## Variante 55
+Tracce: 8
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture
+Case ID: A35349, N61016, N96087, S142137, S160509, S186487, S72097, V18079
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.320000
+probabilità λ: 8/150370 = 0.000053
+Rischio stimato: 0.000017
+
+## Variante 56
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: A37341
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.526000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 57
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: A43211
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.405000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 58
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_Appeal_to_Prefecture -> Send_for_Credit_Collection
+Case ID: A43302
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_Appeal_to_Prefecture | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 59
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: A44928
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 60
+Tracce: 23
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.120000
+probabilità λ: 23/150370 = 0.000153
+Rischio stimato: 0.000018
+
+## Variante 61
+Tracce: 9
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Send_Appeal_to_Prefecture
+Case ID: A5922, A7016, C18622, N100694, N97454, S107858, S118591, S119927, S162092
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.747200
+probabilità λ: 9/150370 = 0.000060
+Rischio stimato: 0.000045
+
+## Variante 62
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment
+Case ID: A823
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.443840
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 63
+Tracce: 30
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 30/150370 = 0.000200
+Rischio stimato: 0.000030
+
+## Variante 64
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C10852
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 110000
+Severity aggregata σ: 0.601682
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 65
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Case ID: C11327
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 66
+Tracce: 4
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Send_Fine
+Case ID: C12875, C14313, C21172, N43761
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Send_Fine | >>)
+  (>> | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40001
+Severity aggregata σ: 0.792704
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000021
+
+## Variante 67
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C13062
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 100000
+Severity aggregata σ: 0.495800
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 68
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: C13897
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.777536
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000005
+
+## Variante 69
+Tracce: 11
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 11/150370 = 0.000073
+Rischio stimato: 0.000011
+
+## Variante 70
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: C14976
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 71
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C15958, C22164, S136648, S160128
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.185494
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000005
+
+## Variante 72
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Send_Appeal_to_Prefecture
+Case ID: C16549, N55798, N57754
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000007
+
+## Variante 73
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment -> Payment
+Case ID: C16950
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 50000
+Severity aggregata σ: 0.358684
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 74
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Case ID: C17552, S102549
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (Appeal_to_Judge | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.833152
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000011
+
+## Variante 75
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C17607
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 120000
+Severity aggregata σ: 0.499456
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 76
+Tracce: 19
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.164000
+probabilità λ: 19/150370 = 0.000126
+Rischio stimato: 0.000021
+
+## Variante 77
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C18190
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 100000
+Severity aggregata σ: 0.445381
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 78
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Payment -> Payment -> Payment -> Payment
+Case ID: C18213
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.314100
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 79
+Tracce: 19
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.320000
+probabilità λ: 19/150370 = 0.000126
+Rischio stimato: 0.000040
+
+## Variante 80
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C19089
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 70000
+Severity aggregata σ: 0.301663
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 81
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C19108
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 110000
+Severity aggregata σ: 0.473111
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 82
+Tracce: 22
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.320000
+probabilità λ: 22/150370 = 0.000146
+Rischio stimato: 0.000047
+
+## Variante 83
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Receive_Result_Appeal_from_Prefecture
+Case ID: C20123
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.721920
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000005
+
+## Variante 84
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C20817
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 150000
+Severity aggregata σ: 0.570846
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 85
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Send_for_Credit_Collection
+Case ID: C20986, S149523, S158300, S161993, S66463
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.449000
+probabilità λ: 5/150370 = 0.000033
+Rischio stimato: 0.000015
+
+## Variante 86
+Tracce: 1
+Sequenza: Create_Fine -> Appeal_to_Judge -> Send_Fine -> Payment
+Case ID: C21036
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Appeal_to_Judge | >>)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.340000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 87
+Tracce: 13
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.142625
+probabilità λ: 13/150370 = 0.000086
+Rischio stimato: 0.000012
+
+## Variante 88
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C21281, S160068, S163907, V19190
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 50000
+Severity aggregata σ: 0.226219
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000006
+
+## Variante 89
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C22750, V17050, V18678, V18883, V18977
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 60000
+Severity aggregata σ: 0.264908
+probabilità λ: 5/150370 = 0.000033
+Rischio stimato: 0.000009
+
+## Variante 90
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: C22811
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 60000
+Severity aggregata σ: 0.264908
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 91
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Payment -> Send_Appeal_to_Prefecture
+Case ID: C22966
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (>> | >>)
+  (Payment | Payment)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.481760
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 92
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment -> Payment
+Case ID: C23364
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.185494
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 93
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment
+Case ID: L2393, S167117, S178436
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.142625
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000003
+
+## Variante 94
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: N100056, N34672
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.613250
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000008
+
+## Variante 95
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Case ID: N100576, V18655
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.476400
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000006
+
+## Variante 96
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_Appeal_to_Prefecture
+Case ID: N100627
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.586356
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 97
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: N101006, N39819, S112310, S116185, S66108, V4779
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.800288
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000032
+
+## Variante 98
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Payment
+Case ID: N102208
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 99
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Send_for_Credit_Collection
+Case ID: N102972
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.449000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 100
+Tracce: 56
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Insert_Fine_Notification -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Payment | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.050000
+probabilità λ: 56/150370 = 0.000372
+Rischio stimato: 0.000019
+
+## Variante 101
+Tracce: 13
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 13/150370 = 0.000086
+Rischio stimato: 0.000013
+
+## Variante 102
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Send_for_Credit_Collection
+Case ID: N26309, N51425, V15842
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.449000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000009
+
+## Variante 103
+Tracce: 7
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Case ID: N27915, N57418, S81678, S83221, S85616, S88879, S97868
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.097500
+probabilità λ: 7/150370 = 0.000047
+Rischio stimato: 0.000005
+
+## Variante 104
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment
+Case ID: N29373, N72671, N82828, S54882
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Payment | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.097500
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000003
+
+## Variante 105
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Payment -> Send_for_Credit_Collection
+Case ID: N35881, S66168
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 106
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment
+Case ID: N36533, S66345
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000005
+
+## Variante 107
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: N36911
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 108
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: N37813, V8160
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.553453
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000007
+
+## Variante 109
+Tracce: 14
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.097500
+probabilità λ: 14/150370 = 0.000093
+Rischio stimato: 0.000009
+
+## Variante 110
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: N38713
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.296000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 111
+Tracce: 7
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment
+Case ID: N38946, N81295, S188064, S77503, V8231, V8782, V9229
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 7/150370 = 0.000047
+Rischio stimato: 0.000019
+
+## Variante 112
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: N39144, N55182, V7998
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.553453
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000011
+
+## Variante 113
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment
+Case ID: N40086, S159756, V8944
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.481760
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000010
+
+## Variante 114
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment
+Case ID: N40397, S121172, V18566
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000006
+
+## Variante 115
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Case ID: N40847, N43100, N44227, N59763, V9489
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 5/150370 = 0.000033
+Rischio stimato: 0.000008
+
+## Variante 116
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: N41192, V12383
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.558000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000007
+
+## Variante 117
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: N41256
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 118
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: N41357, V8784, V9423, V9743
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.443840
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000012
+
+## Variante 119
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: N41527, N43871, N63049
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.558000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000011
+
+## Variante 120
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Case ID: N42068, S140553
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 121
+Tracce: 12
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.354000
+probabilità λ: 12/150370 = 0.000080
+Rischio stimato: 0.000028
+
+## Variante 122
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: N43645, S111699
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.580100
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000008
+
+## Variante 123
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Payment
+Case ID: N45281
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.500720
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 124
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Payment -> Payment
+Case ID: N46918, N77237
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.386300
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000005
+
+## Variante 125
+Tracce: 9
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment
+Case ID: N47801, N69972, S109515, S73536, S98111, V12074, V12461, V17677, V18237
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 9/150370 = 0.000060
+Rischio stimato: 0.000017
+
+## Variante 126
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: N52887
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 127
+Tracce: 20
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Payment -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.097500
+probabilità λ: 20/150370 = 0.000133
+Rischio stimato: 0.000013
+
+## Variante 128
+Tracce: 15
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.354000
+probabilità λ: 15/150370 = 0.000100
+Rischio stimato: 0.000035
+
+## Variante 129
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment
+Case ID: N56882
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.324930
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 130
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender
+Case ID: N58131
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 131
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture
+Case ID: N62649
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.759840
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000005
+
+## Variante 132
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Send_for_Credit_Collection
+Case ID: N63373, N65648, N81707, S143550, S93409
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.489600
+probabilità λ: 5/150370 = 0.000033
+Rischio stimato: 0.000016
+
+## Variante 133
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Send_for_Credit_Collection
+Case ID: N67142
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.502722
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 134
+Tracce: 3
+Sequenza: Create_Fine -> Appeal_to_Judge -> Send_Fine
+Case ID: N68210, S111480, S137817
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Appeal_to_Judge | >>)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.736000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000015
+
+## Variante 135
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Payment -> Add_penalty -> Send_for_Credit_Collection
+Case ID: N72044, N72135, N72304, N76720, S66126, S72528
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Add_penalty | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.531650
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000021
+
+## Variante 136
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_for_Credit_Collection
+Case ID: N78749, S111662, S114719, S117574, S145804, V17076
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000010
+
+## Variante 137
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Send_for_Credit_Collection
+Case ID: N80664
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.515120
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 138
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Payment -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: N81214
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Payment | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 139
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Payment
+Case ID: N81810
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.431520
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 140
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_for_Credit_Collection
+Case ID: N83048, S105196, S120250, V11923
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000007
+
+## Variante 141
+Tracce: 7
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Payment
+Case ID: N87170, N96613, S106652, S159061, S160144, S93069, V18050
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 7/150370 = 0.000047
+Rischio stimato: 0.000017
+
+## Variante 142
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Send_for_Credit_Collection
+Case ID: N93295
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+  (Add_penalty | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.531650
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 143
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge
+Case ID: N93643, N95560, S43497, S99180, V12159, V12287
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000010
+
+## Variante 144
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment
+Case ID: N95495
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.097500
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 145
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: N96265
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 146
+Tracce: 5
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: N98923, S112091, S112679, S180259, S183042
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.434750
+probabilità λ: 5/150370 = 0.000033
+Rischio stimato: 0.000014
+
+## Variante 147
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Send_Appeal_to_Prefecture
+Case ID: N98929
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.777536
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000005
+
+## Variante 148
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_for_Credit_Collection -> Send_Appeal_to_Prefecture
+Case ID: N99647
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.586356
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 149
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: P1505, P1762
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Send_Appeal_to_Prefecture | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000007
+
+## Variante 150
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Payment
+Case ID: P20, S180596, S85949
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.354000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000007
+
+## Variante 151
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Send_Appeal_to_Prefecture -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: P2779
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Send_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 152
+Tracce: 6
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender
+Case ID: P3316, P5092, S179304, S182746, S188714, S190532
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.150000
+probabilità λ: 6/150370 = 0.000040
+Rischio stimato: 0.000006
+
+## Variante 153
+Tracce: 17
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 17/150370 = 0.000113
+Rischio stimato: 0.000042
+
+## Variante 154
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Payment
+Case ID: S105079, V5524
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 10000
+Severity aggregata σ: 0.200000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 155
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment
+Case ID: S108264, V11633
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.324930
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000004
+
+## Variante 156
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: S112135
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.405000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 157
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Case ID: S112486
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 50000
+Severity aggregata σ: 0.601095
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 158
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Payment -> Payment
+Case ID: S113200
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 159
+Tracce: 7
+Sequenza: Create_Fine -> Send_Fine -> Appeal_to_Judge
+Case ID: S114328, S117270, S117944, S118660, V16643, V16650, V8937
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Appeal_to_Judge | >>)
+  (>> | Insert_Fine_Notification)
+  (>> | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.736000
+probabilità λ: 7/150370 = 0.000047
+Rischio stimato: 0.000034
+
+## Variante 160
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: S126847
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.558000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 161
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Add_penalty -> Send_Appeal_to_Prefecture
+Case ID: S134268, S137972
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.777536
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000010
+
+## Variante 162
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment -> Payment -> Payment
+Case ID: S136743
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.245510
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 163
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_Appeal_to_Prefecture
+Case ID: S136885, S137407
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.586356
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000008
+
+## Variante 164
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment
+Case ID: S137319
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.164000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 165
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Add_penalty -> Appeal_to_Judge
+Case ID: S138146, V17805
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Add_penalty | >>)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 166
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Appeal_to_Judge
+Case ID: S140449
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Appeal_to_Judge | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 167
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: S141999, V10054
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000004
+
+## Variante 168
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment -> Payment
+Case ID: S142148, V19109
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.205800
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 169
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Send_for_Credit_Collection
+Case ID: S144360, S159191
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.476550
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000006
+
+## Variante 170
+Tracce: 2
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: S149373, S149512
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.759840
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000010
+
+## Variante 171
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Payment -> Payment -> Payment
+Case ID: S150345
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.429620
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 172
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Appeal_to_Judge -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: S154142
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Appeal_to_Judge | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 50000
+Severity aggregata σ: 0.283235
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 173
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: S157542, S159026, S184854, S186881
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.462800
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000012
+
+## Variante 174
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: S161018
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 70000
+Severity aggregata σ: 0.301663
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 175
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: S161627
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 176
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment
+Case ID: S161720
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 177
+Tracce: 2
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Fine -> Send_Appeal_to_Prefecture
+Case ID: S163356, V8904
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Fine | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 40001
+Severity aggregata σ: 0.792704
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000011
+
+## Variante 178
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Notify_Result_Appeal_to_Offender -> Receive_Result_Appeal_from_Prefecture
+Case ID: S184035
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.592000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 179
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture
+Case ID: S185824
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.400000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 180
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Case ID: S188608, S93920, V9212
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000005
+
+## Variante 181
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment -> Add_penalty -> Payment
+Case ID: S37939, S60051
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000005
+
+## Variante 182
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Payment -> Send_Fine
+Case ID: S48325
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (>> | >>)
+  (Payment | Payment)
+  (Payment | >>)
+  (Send_Fine | >>)
+Costo algoritmo PM4Py: 20001
+Severity aggregata σ: 0.221000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 183
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Payment -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: S57438
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | >>)
+  (>> | >>)
+  (Payment | Payment)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.481760
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 184
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Payment -> Payment
+Case ID: S60542
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.386300
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 185
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Send_Fine -> Payment
+Case ID: S62223
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Send_Fine | >>)
+  (>> | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30001
+Severity aggregata σ: 0.481760
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 186
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Payment -> Payment
+Case ID: S66322, V12206
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 187
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Payment
+Case ID: S68811, S69073
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Payment | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.354000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000005
+
+## Variante 188
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: S68987
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.500720
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 189
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment
+Case ID: S69696
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.324930
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 190
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Appeal_to_Judge
+Case ID: S71777, V9010, V9011
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (>> | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Appeal_to_Judge | >>)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.630400
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000013
+
+## Variante 191
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Appeal_to_Judge -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: S73249
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.443840
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 192
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Appeal_to_Judge -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture
+Case ID: S73463, V8852, V9002
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Appeal_to_Judge | >>)
+  (>> | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (>> | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 40000
+Severity aggregata σ: 0.630400
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000013
+
+## Variante 193
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge
+Case ID: S75970
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.401600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 194
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: S82666
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 195
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender
+Case ID: S84347, S88123, V12557
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000005
+
+## Variante 196
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: S86974, S94546, V11801
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000005
+
+## Variante 197
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender
+Case ID: S87021
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 198
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment
+Case ID: S87107
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Notify_Result_Appeal_to_Offender | >>)
+  (Appeal_to_Judge | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.582880
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 199
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Appeal_to_Judge -> Payment
+Case ID: S92963
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.164000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 200
+Tracce: 4
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Send_for_Credit_Collection
+Case ID: S95307, V10556, V17438, V17555
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 4/150370 = 0.000027
+Rischio stimato: 0.000007
+
+## Variante 201
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Appeal_to_Judge
+Case ID: S95382
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (>> | >>)
+  (Payment | Payment)
+  (Add_penalty | >>)
+  (Appeal_to_Judge | >>)
+Costo algoritmo PM4Py: 20001
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 202
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture
+Case ID: S96683
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.401600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 203
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Insert_Fine_Notification -> Add_penalty -> Payment
+Case ID: V10030
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 204
+Tracce: 1
+Sequenza: Create_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment
+Case ID: V10149
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 205
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment
+Case ID: V10395
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.205800
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 206
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: V10968
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 207
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V11249
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 70000
+Severity aggregata σ: 0.375172
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 208
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge
+Case ID: V11762
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Appeal_to_Judge | >>)
+  (>> | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.401600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 209
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment -> Send_for_Credit_Collection
+Case ID: V11790
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 210
+Tracce: 3
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V11900, V18853, V7972
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 70000
+Severity aggregata σ: 0.375172
+probabilità λ: 3/150370 = 0.000020
+Rischio stimato: 0.000007
+
+## Variante 211
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_for_Credit_Collection
+Case ID: V16089
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.252000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 212
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Appeal_to_Judge -> Send_Appeal_to_Prefecture
+Case ID: V16549
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (>> | Payment)
+Costo algoritmo PM4Py: 50000
+Severity aggregata σ: 0.824253
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000005
+
+## Variante 213
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Add_penalty -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment
+Case ID: V16732
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Add_penalty | >>)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.289400
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 214
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Send_Appeal_to_Prefecture -> Send_for_Credit_Collection
+Case ID: V18308, V18599
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | >>)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (>> | Send_Appeal_to_Prefecture)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Send_Appeal_to_Prefecture | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.529950
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000007
+
+## Variante 215
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V18366
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 90000
+Severity aggregata σ: 0.369751
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 216
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Send_for_Credit_Collection
+Case ID: V18908
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Send_for_Credit_Collection | >>)
+Costo algoritmo PM4Py: 100000
+Severity aggregata σ: 0.634455
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 217
+Tracce: 1
+Sequenza: Create_Fine -> Payment -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender
+Case ID: V4402
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Payment | >>)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (>> | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 218
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Payment -> Add_penalty -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Payment
+Case ID: V4870
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Payment | >>)
+  (Add_penalty | Add_penalty)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.399600
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 219
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment
+Case ID: V7190, V7422
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.240000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000003
+
+## Variante 220
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Send_Appeal_to_Prefecture -> Payment
+Case ID: V7616
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.500720
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 221
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V7767
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 60000
+Severity aggregata σ: 0.319073
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 222
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Receive_Result_Appeal_from_Prefecture -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: V7999
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Receive_Result_Appeal_from_Prefecture | >>)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.500720
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 223
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Appeal_to_Judge -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V8169
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 120000
+Severity aggregata σ: 0.649480
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 224
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Appeal_to_Judge -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V8192
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Appeal_to_Judge | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 70000
+Severity aggregata σ: 0.547004
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000004
+
+## Variante 225
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment
+Case ID: V8350
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Payment | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.232875
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 226
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Send_Appeal_to_Prefecture -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: V8443
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Send_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 227
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Add_penalty -> Payment -> Payment -> Payment
+Case ID: V8629
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+  (Payment | >>)
+  (Payment | >>)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.278000
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000002
+
+## Variante 228
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Payment -> Send_for_Credit_Collection
+Case ID: V8700
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Payment | >>)
+  (Send_for_Credit_Collection | Send_for_Credit_Collection)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.192500
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000001
+
+## Variante 229
+Tracce: 2
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Insert_Fine_Notification -> Send_Appeal_to_Prefecture -> Add_penalty -> Payment
+Case ID: V8809, V9180
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Send_Appeal_to_Prefecture | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 20000
+Severity aggregata σ: 0.368000
+probabilità λ: 2/150370 = 0.000013
+Rischio stimato: 0.000005
+
+## Variante 230
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Fine_Notification -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Add_penalty -> Receive_Result_Appeal_from_Prefecture -> Notify_Result_Appeal_to_Offender -> Appeal_to_Judge -> Payment -> Payment -> Payment -> Payment -> Payment -> Payment
+Case ID: V9576
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Insert_Date_Appeal_to_Prefecture | Insert_Date_Appeal_to_Prefecture)
+  (Send_Appeal_to_Prefecture | Send_Appeal_to_Prefecture)
+  (Add_penalty | >>)
+  (Receive_Result_Appeal_from_Prefecture | Receive_Result_Appeal_from_Prefecture)
+  (Notify_Result_Appeal_to_Offender | Notify_Result_Appeal_to_Offender)
+  (Appeal_to_Judge | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (Payment | >>)
+  (>> | >>)
+Costo algoritmo PM4Py: 80000
+Severity aggregata σ: 0.450151
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+
+## Variante 231
+Tracce: 1
+Sequenza: Create_Fine -> Send_Fine -> Insert_Date_Appeal_to_Prefecture -> Send_Appeal_to_Prefecture -> Insert_Fine_Notification -> Appeal_to_Judge -> Add_penalty -> Payment
+Case ID: V9715
+Allineamento (log | model):
+  (Create_Fine | Create_Fine)
+  (Send_Fine | Send_Fine)
+  (Insert_Date_Appeal_to_Prefecture | >>)
+  (Send_Appeal_to_Prefecture | >>)
+  (Insert_Fine_Notification | Insert_Fine_Notification)
+  (Appeal_to_Judge | >>)
+  (Add_penalty | Add_penalty)
+  (Payment | Payment)
+Costo algoritmo PM4Py: 30000
+Severity aggregata σ: 0.443840
+probabilità λ: 1/150370 = 0.000007
+Rischio stimato: 0.000003
+

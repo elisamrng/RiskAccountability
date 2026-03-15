@@ -1,0 +1,4 @@
+# Elenco allineamenti
+# Numero di varianti: 231
+# Tracce totali (N): 150370
+

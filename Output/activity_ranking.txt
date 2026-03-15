@@ -1,0 +1,121 @@
+### Ranking delle prime 10 attività per rischio stimato ###
+1) Send_for_Credit_Collection
+   score:        0.417979
+   rischio_M:    0.000000
+   rischio_L:    0.417979
+   σ_M:          0.700000
+   σ_L:          0.420000
+   λ_M:          0.000000
+   λ_L:          0.995188
+   freq_M:       0
+   freq_L:       58729
+   sync:         284
+
+2) Payment
+   score:        0.327312
+   rischio_M:    0.321891
+   rischio_L:    0.005421
+   σ_M:          0.600000
+   σ_L:          0.050000
+   λ_M:          0.536485
+   λ_L:          0.108426
+   freq_M:       80079
+   freq_L:       8414
+   sync:         69187
+
+3) Send_Appeal_to_Prefecture
+   score:        0.170781
+   rischio_M:    0.014130
+   rischio_L:    0.156651
+   σ_M:          0.300000
+   σ_L:          0.210000
+   λ_M:          0.047101
+   λ_L:          0.745955
+   freq_M:       52
+   freq_L:       3089
+   sync:         1052
+
+4) Insert_Date_Appeal_to_Prefecture
+   score:        0.151655
+   rischio_M:    0.003804
+   rischio_L:    0.147851
+   σ_M:          0.350000
+   σ_L:          0.200000
+   λ_M:          0.010870
+   λ_L:          0.739255
+   freq_M:       12
+   freq_L:       3096
+   sync:         1092
+
+5) Appeal_to_Judge
+   score:        0.120000
+   rischio_M:    0.000000
+   rischio_L:    0.120000
+   σ_M:          0.200000
+   σ_L:          0.120000
+   λ_M:          0.000000
+   λ_L:          1.000000
+   freq_M:       0
+   freq_L:       555
+   sync:         0
+
+6) Insert_Fine_Notification
+   score:        0.057310
+   rischio_M:    0.057310
+   rischio_L:    0.000000
+   σ_M:          0.250000
+   σ_L:          0.170000
+   λ_M:          0.229240
+   λ_L:          0.000000
+   freq_M:       23752
+   freq_L:       0
+   sync:         79860
+
+7) Notify_Result_Appeal_to_Offender
+   score:        0.046467
+   rischio_M:    0.040217
+   rischio_L:    0.006250
+   σ_M:          0.200000
+   σ_L:          0.400000
+   λ_M:          0.201087
+   λ_L:          0.015625
+   freq_M:       222
+   freq_L:       14
+   sync:         882
+
+8) Receive_Result_Appeal_from_Prefecture
+   score:        0.044919
+   rischio_M:    0.037772
+   rischio_L:    0.007147
+   σ_M:          0.300000
+   σ_L:          0.210000
+   λ_M:          0.125906
+   λ_L:          0.034034
+   freq_M:       139
+   freq_L:       34
+   sync:         965
+
+9) Add_penalty
+   score:        0.002844
+   rischio_M:    0.000000
+   rischio_L:    0.002844
+   σ_M:          0.250000
+   σ_L:          0.150000
+   λ_M:          0.000000
+   λ_L:          0.018958
+   freq_M:       0
+   freq_L:       1514
+   sync:         78346
+
+10) Send_Fine
+   score:        0.000649
+   rischio_M:    0.000000
+   rischio_L:    0.000649
+   σ_M:          0.300000
+   σ_L:          0.180000
+   λ_M:          0.000000
+   λ_L:          0.003606
+   freq_M:       0
+   freq_L:       375
+   sync:         103612
+

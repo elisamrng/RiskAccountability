@@ -1,0 +1,127 @@
+# Severity e rischio per attività
+# σ_M(A), σ_L(A) da severity_map.json
+# λ_M(A) = freq_M(A) / (freq_M(A) + sync(A))
+# λ_L(A) = freq_L(A) / (freq_L(A) + sync(A))
+# rischio_M = σ_M × λ_M ; rischio_L = σ_L × λ_L
+
+## Send_for_Credit_Collection
+  freq_logOnly:   58729
+  freq_modelOnly: 0
+  sync:           284
+  σ_M(A):         0.700000
+  σ_L(A):         0.420000
+  λ_M(A):         0.000000
+  λ_L(A):         0.995188
+  rischio_M:      0.000000
+  rischio_L:      0.417979
+
+## Payment
+  freq_logOnly:   8414
+  freq_modelOnly: 80079
+  sync:           69187
+  σ_M(A):         0.600000
+  σ_L(A):         0.050000
+  λ_M(A):         0.536485
+  λ_L(A):         0.108426
+  rischio_M:      0.321891
+  rischio_L:      0.005421
+
+## Send_Appeal_to_Prefecture
+  freq_logOnly:   3089
+  freq_modelOnly: 52
+  sync:           1052
+  σ_M(A):         0.300000
+  σ_L(A):         0.210000
+  λ_M(A):         0.047101
+  λ_L(A):         0.745955
+  rischio_M:      0.014130
+  rischio_L:      0.156651
+
+## Insert_Date_Appeal_to_Prefecture
+  freq_logOnly:   3096
+  freq_modelOnly: 12
+  sync:           1092
+  σ_M(A):         0.350000
+  σ_L(A):         0.200000
+  λ_M(A):         0.010870
+  λ_L(A):         0.739255
+  rischio_M:      0.003804
+  rischio_L:      0.147851
+
+## Appeal_to_Judge
+  freq_logOnly:   555
+  freq_modelOnly: 0
+  sync:           0
+  σ_M(A):         0.200000
+  σ_L(A):         0.120000
+  λ_M(A):         0.000000
+  λ_L(A):         1.000000
+  rischio_M:      0.000000
+  rischio_L:      0.120000
+
+## Insert_Fine_Notification
+  freq_logOnly:   0
+  freq_modelOnly: 23752
+  sync:           79860
+  σ_M(A):         0.250000
+  σ_L(A):         0.170000
+  λ_M(A):         0.229240
+  λ_L(A):         0.000000
+  rischio_M:      0.057310
+  rischio_L:      0.000000
+
+## Notify_Result_Appeal_to_Offender
+  freq_logOnly:   14
+  freq_modelOnly: 222
+  sync:           882
+  σ_M(A):         0.200000
+  σ_L(A):         0.400000
+  λ_M(A):         0.201087
+  λ_L(A):         0.015625
+  rischio_M:      0.040217
+  rischio_L:      0.006250
+
+## Receive_Result_Appeal_from_Prefecture
+  freq_logOnly:   34
+  freq_modelOnly: 139
+  sync:           965
+  σ_M(A):         0.300000
+  σ_L(A):         0.210000
+  λ_M(A):         0.125906
+  λ_L(A):         0.034034
+  rischio_M:      0.037772
+  rischio_L:      0.007147
+
+## Add_penalty
+  freq_logOnly:   1514
+  freq_modelOnly: 0
+  sync:           78346
+  σ_M(A):         0.250000
+  σ_L(A):         0.150000
+  λ_M(A):         0.000000
+  λ_L(A):         0.018958
+  rischio_M:      0.000000
+  rischio_L:      0.002844
+
+## Send_Fine
+  freq_logOnly:   375
+  freq_modelOnly: 0
+  sync:           103612
+  σ_M(A):         0.300000
+  σ_L(A):         0.180000
+  λ_M(A):         0.000000
+  λ_L(A):         0.003606
+  rischio_M:      0.000000
+  rischio_L:      0.000649
+
+## Create_Fine
+  freq_logOnly:   0
+  freq_modelOnly: 0
+  sync:           150370
+  σ_M(A):         0.100000
+  σ_L(A):         0.060000
+  λ_M(A):         0.000000
+  λ_L(A):         0.000000
+  rischio_M:      0.000000
+  rischio_L:      0.000000
+
