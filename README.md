@@ -3,8 +3,8 @@
 This repository contains the work carried out during the internship of:
 
 **Emanuele Machetti**
-Bachelor's Degree in Computer Science
-Department of Computer Science
+Bachelor's Degree in Computer Science  
+Department of Computer Science  
 University of Turin
 
 Under the supervision of 
