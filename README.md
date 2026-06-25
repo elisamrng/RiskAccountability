@@ -3,12 +3,12 @@
 This repository contains the work carried out during the internship of:
 
 **Emanuele Machetti**
-Bachelor's Degree in Computer Science  
-Department of Computer Science  
+Bachelor's Degree in Computer Science
+Department of Computer Science
 University of Turin
 
 Under the supervision of 
-**Roberto Micalizio and Elisa Marengo**
+**Matteo Baldoni, Cristina Baroglio, Elisa Marengo, and Roberto Micalizio**
 
 ------------------------------------------------------------------------
 
@@ -29,15 +29,11 @@ Output/         # Contains generated outputs
 
 ## Required Packages
 
-Running `main.py` requires the following packages:
-
--   pm4py (2.3.0)
--   rustxes (optional but recommended to improve performance)
+Running `main.py` requires the packages listed in `requirements.txt`.
 
 Install them with:
 
-    python -m pip install pm4py
-    python -m pip install rustxes
+    python -m pip install -r requirements.txt
 
 ------------------------------------------------------------------------
 
@@ -81,30 +77,30 @@ Output/
 ```
 
 
-**activity_ranking.txt**
+### activity_ranking.txt
 
 Ranking of activities with the highest severity score.
 
-**activity_severity.txt**
+### activity_severity.txt
 
 Lists the severity values associated with each activity.
 
-**variants_ranking.txt**
+### variants_ranking.txt
 
 Ranking of the most risky variants.
 
 
-**variant_repeats.txt**
+### variant_repeats.txt
 
 Reports the number of repetitions of each repeated activity within each
 variant.
 
-**variants_alignments.txt**
+### variants_alignments.txt
 
 Displays the alignment between log traces and the process model together
 with the associated severity values.
 
-**variants_alignments_skipped.txt**
+### variants_alignments_skipped.txt
 
 Contains only the variants that were excluded from the main analysis
 using `list_avoid`.
