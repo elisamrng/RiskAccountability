@@ -1,0 +1,11 @@
+name: riskaccountability
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10.18
+  - pip
+  - pip:
+      - pm4py==2.2.32
+      - pandas==2.3.3
+      - graphviz==0.21
+      - rustxes==0.2.11
