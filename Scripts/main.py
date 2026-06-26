@@ -66,7 +66,9 @@ def get_variants(log_file, csv=True, single_case = False, case_id = -1):
         dataframe = dataframe.rename(columns={'ID': 'case:ID'})
         
     else: # reads from xes
-        dataframe = pm4py.read_xes(log_file)
+        # dataframe = pm4py.read_xes(log_file)
+        event_log = pm4py.read_xes(log_file)
+        dataframe = pm4py.convert_to_dataframe(event_log)
         dataframe = dataframe.rename(columns={'case:concept:name': 'case:ID'})
         dataframe = dataframe.rename(columns={'concept:name': 'activity'})
 
@@ -99,7 +101,8 @@ def get_variants(log_file, csv=True, single_case = False, case_id = -1):
 # are the activities and the values are the total number of skips for the 
 # activities of the optimal alignments of every log trace
 def find_activity_skips(model_file_pnml, variants, list_avoid):
-    net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml, True)
+    # net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml, True)
+    net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml)
 
     activities = {}    # sum model-only + log-only
     models_skip = {}   # model-only
@@ -135,7 +138,8 @@ def find_activity_skips(model_file_pnml, variants, list_avoid):
 # the alignments of the traces to the path and the total number of traces aligning to it.
 def find_model_path(model_file_pnml, variants, list_avoid):
 
-    net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml, True) # model net
+    #net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml, True) # model net
+    net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml) # model net
     model_paths = {}
 
     print("\nNumber of variants: \n")
@@ -209,7 +213,8 @@ if __name__ == '__main__':
     # Some cases can be avoided if needed
     list_avoid = []
     
-    net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml, True)
+    # net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml, True)
+    net, initial_marking, final_marking = pm4py.read_pnml(model_file_pnml)
 
     fitness = None
     precision = None
