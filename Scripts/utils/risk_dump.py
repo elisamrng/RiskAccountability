@@ -38,7 +38,8 @@ def dump_variants_with_alignments_and_risk(
 
     sigma_map = load_sigma_map(severity_json_path)
 
-    net, im, fm = pm4py.read_pnml(model_file_pnml, True)
+    # net, im, fm = pm4py.read_pnml(model_file_pnml, True)
+    net, im, fm = pm4py.read_pnml(model_file_pnml)
 
     family_members = {}
     member_sev = {}
