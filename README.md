@@ -26,6 +26,11 @@ Output/         # Contains generated outputs
 ```
 
 ------------------------------------------------------------------------
+# Requirements
+
+The code has been tested with:
+
+- Python 3.10.18
 
 ## Required Packages
 
