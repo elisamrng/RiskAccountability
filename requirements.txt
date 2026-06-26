@@ -1,3 +1,4 @@
-pm4py==2.3.0
-pandas
-rustxes
+pm4py==2.2.32
+pandas==2.3.3
+graphviz==0.21
+rustxes==0.2.11
