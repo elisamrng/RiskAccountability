@@ -32,6 +32,14 @@ The code has been tested with:
 
 - Python 3.10.18
 
+## Conda
+You can create the Conda environment
+
+```bash
+conda env create -f environment.yml
+conda activate riskaccountability
+```
+
 ## Required Packages
 
 Running `main.py` requires the packages listed in `requirements.txt`.
